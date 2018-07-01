@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Background -->
+    <ImageView
+        style="@style/background_image"
+        tools:ignore="ContentDescription" />
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/final_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/dark_primary_gradient"
+        android:gravity="center_horizontal"
+        android:padding="4dp"
+        android:text="@string/final_header"
+        android:textColor="@color/iconText"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <!-- Score Summary -->
+    <TextView
+        android:id="@+id/score_summary_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/final_header"
+        android:layout_margin="8dp"
+        android:background="@drawable/dark_primary_gradient"
+        android:gravity="start"
+        android:paddingBottom="4dp"
+        android:paddingEnd="4dp"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"
+        android:text="@string/question_placeholder"
+        android:textColor="@color/iconText"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- % Correct -->
+    <TextView
+        android:id="@+id/percent_correct_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/dark_primary_gradient"
+        android:gravity="center_horizontal"
+        android:padding="4dp"
+        android:text="@string/question_placeholder"
+        android:textColor="@color/iconText"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <!-- Email Button -->
+    <Button
+        android:id="@+id/email_me"
+        style="@style/button"
+        android:layout_above="@id/try_again"
+        android:onClick="emailUserScoreBreakdown"
+        android:text="@string/email_me" />
+
+    <!-- Try Again Button -->
+    <Button
+        android:id="@+id/try_again"
+        style="@style/button"
+        android:layout_alignParentBottom="true"
+        android:onClick="resetQuiz"
+        android:text="@string/try_again" />
+
+</RelativeLayout>
+

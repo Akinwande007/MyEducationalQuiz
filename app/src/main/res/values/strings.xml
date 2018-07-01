@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Educational Quiz</string>
+    <string name="app_name_landscape">Inspire yourself with Technology</string>
+    <string name="user_name">Your Name</string>
+    <string name="user_email">Your Email</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+    <string name="final_header">Your Score</string>
+    <string name="email_me">Email Me My Score Breakdown</string>
+    <string name="try_again">Try Again</string>
+    <string name="next_question">Next Question</string>
+    <string name="previous_question">Previous Question</string>
+    <string name="question_placeholder">Placeholder</string>
+    <string name="image_content_description">Image</string>
+    <string name="free_text">Free Text</string>
+</resources>
